@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/Jokay03J/embedGenerator#readme",
   "dependencies": {
-    "axios": "^0.26.0"
+    "axios": "^0.26.0",
+    "embedgenerator": "^0.0.3"
   },
   "devDependencies": {
     "jest": "^27.5.1"
