@@ -11,11 +11,10 @@ class DeezerGenerator {
    */
   static async embed(url) {
     const encodedURL = encodeURI(url)
-    const res = await axios.get(`https://api.deezer.com/oembed?url=${encodedURL}&maxwidth=700&maxheight=300&tracklist=true&format=json`)
+    const res = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/oembed?url=${encodedURL}&maxwidth=700&maxheight=300&tracklist=true&format=json`, { headers: { origin: "*","x-requested-with": "axios/0.26"}})
       .catch((err) => {
         switch (err.response.status) {
           case 404:
-            console.log("test 1");
             throw new DeezerURINotFound()
             break;
 
@@ -24,7 +23,7 @@ class DeezerGenerator {
             break;
 
           default:
-            console.log(err.response.status);
+            console.log(err);
             throw new DeezerGenerator()
             break;
         }
