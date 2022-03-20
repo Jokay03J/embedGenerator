@@ -29,4 +29,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "testing code"
+          npm install --force
           npm run test
