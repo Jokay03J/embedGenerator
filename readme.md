@@ -27,7 +27,7 @@ SpotifyGenerator.embed("https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si
 })
 ```
 
-# deezer
+# deezer(not full supported)
 ```js
 const { DeezerGenerator } = require("embedgenerator")
 
