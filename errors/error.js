@@ -49,7 +49,7 @@ class SpotifyInvalidURI extends SpotifyGeneratorError {
 class DeezerGeneratorError extends GeneratorError {
   constructor(message) {
     super()
-    this.message = message? message : "Deezer Error";
+    this.message = message ? message : "Deezer Error";
     this.name = "DeezerGenerator";
   }
 }
@@ -64,23 +64,57 @@ class DeezerURINotFound extends DeezerGeneratorError {
 }
 
 //Invalid URI
-class DeezerInvalidURI extends DeezerGeneratorError{
+class DeezerInvalidURI extends DeezerGeneratorError {
   constructor() {
     super();
     this.name = "DeezerGenerator Error"
     this.message = "Invalid URI"
   }
-  
+
 }
 
+//SoundCloud Error
+class SoundCloudGeneratorError extends Error {
+  constructor(message) {
+    super();
+    this.name = "SoundCloudGenerator Error"
+    this.message = message ? message : "SoundCloudError"
+  }
+}
+
+//SoundCloud Invalid URI
+class SoundCloudInvalidURI extends SoundCloudGeneratorError {
+  constructor() {
+    super();
+    this.name = "SoundCloudGenerator Error"
+    this.message = "Invalid URI"
+  }
+}
+
+//SoundCloud URI Not Found
+class SoundCloudURINotFound extends SoundCloudGeneratorError {
+  constructor() {
+    super();
+    this.name = "SoundCloudGenerator Error"
+    this.message = "URI Not Found"
+  }
+}
 
 module.exports = {
+  //youtube Generator Error
   YoutubeGeneratorError,
   YoutubeInvalidURI,
+  //all parents Generator Error default
   GeneratorError,
+  //Spotify Generator Error
   SpotifyGeneratorError,
   SpotifyInvalidURI,
+  //Deezer Generator Error
   DeezerGeneratorError,
   DeezerURINotFound,
-  DeezerInvalidURI
+  DeezerInvalidURI,
+  //SoundCloud Generator Error
+  SoundCloudGeneratorError,
+  SoundCloudInvalidURI,
+  SoundCloudURINotFound
 }
