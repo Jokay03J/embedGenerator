@@ -1,6 +1,6 @@
 {
   "name": "embedgenerator",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "create url embed for spotify,deezer,youtube,etc...!",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "spotify",
     "deezer",
     "youtube",
-    "embed"
+    "embed",
+    "soundcloud"
   ],
   "author": "jokay03J",
   "license": "ISC",
@@ -23,8 +24,7 @@
   },
   "homepage": "https://github.com/Jokay03J/embedGenerator#readme",
   "dependencies": {
-    "axios": "^0.26.0",
-    "embedgenerator": "^0.0.3"
+    "axios": "^0.26.0"
   },
   "devDependencies": {
     "jest": "^27.5.1"
