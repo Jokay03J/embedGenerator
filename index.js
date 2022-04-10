@@ -1,10 +1,10 @@
-// const DeezerGenerator = require("./generator/deezer"); ADD SUPPORT
+const DeezerGenerator = require("./generator/deezer");
 const SpotifyGenerator = require("./generator/spotify");
 const YoutubeGenerator = require("./generator/youtube");
 const SoundCloudGenerator = require("./generator/souncloud")
 
 module.exports = {
-  // DeezerGenerator,
+  DeezerGenerator,
   SpotifyGenerator,
   YoutubeGenerator,
   SoundCloudGenerator
