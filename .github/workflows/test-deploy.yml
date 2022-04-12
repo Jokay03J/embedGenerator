@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: cd docs
+        run: cd docs
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
@@ -25,7 +27,5 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-      - name: cd docs
-        run: cd docs
       - name: run Test
         run: npm run build
