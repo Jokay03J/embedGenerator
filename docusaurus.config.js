@@ -9,7 +9,7 @@ const config = {
   title: 'embedgenerator',
   tagline: 'generate youtube,soundcloud,spotify and deezer widget url',
   url: 'https://jokay03j.github.io',
-  baseUrl: '/',
+  baseUrl: '/embedGenerator/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
