@@ -1,14 +1,14 @@
 name: Test deployment
 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ docs ]
   pull_request:
-    branches: [ docs ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - main
+      - dev
+  push:
+    branches:
+      - main
+      - dev
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
@@ -18,8 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: cd docs
-        run: cd docs
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
@@ -27,5 +25,5 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-      - name: run Test
+      - name: Test build website
         run: npm run build

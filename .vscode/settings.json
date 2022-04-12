@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///home/joan/dev/javascript/modules/embedGenerator/docs/.github/workflows/deploy.yml"
+  }
+}
