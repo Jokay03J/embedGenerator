@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jokay03j.github.io/embedGenerator/blog</id>
     <title>embedgenerator Blog</title>
-    <updated>2022-04-12T18:43:17.000Z</updated>
+    <updated>2022-04-13T17:32:52.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jokay03j.github.io/embedGenerator/blog"/>
     <subtitle>embedgenerator Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Première version]]></title>
         <id>première version</id>
         <link href="https://jokay03j.github.io/embedGenerator/blog/première version"/>
-        <updated>2022-04-12T18:43:17.000Z</updated>
+        <updated>2022-04-13T17:32:52.000Z</updated>
         <summary type="html"><![CDATA[🇫🇷 [fr]]]></summary>
         <content type="html"><![CDATA[<p>🇫🇷 <!-- -->[fr]</p><p>voici la première version de la documentation de <a href="https://npmjs/package/embedgenerator" target="_blank" rel="noopener noreferrer">embed generator</a> !
 cette version contient:</p><ul><li>des exemples</li><li>les sites qui sont supporter</li><li>bien commencer</li></ul><p>🇺🇸 <!-- -->[en]</p><p>first version of the documentation of <a href="https://npmjs/package/embedgenerator" target="_blank" rel="noopener noreferrer">embed generator</a> is out!
