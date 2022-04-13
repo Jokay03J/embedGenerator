@@ -10,7 +10,13 @@ const { YoutubeGenerator } = require("embedgenerator"); //support also ES6 synta
 Main Class for Youtube Generator
 
 ## embed
-  
+supported types
+
+|         type        | supported  |
+|:-------------------:|:----------:|
+|        track        |     ✅     |
+|       playlist      |     ✅     |
+|       podcast       |     ✅     |
 ```js
 const { YoutubeGenerator } = require("embedgenerator"); //support also ES6 syntax
 

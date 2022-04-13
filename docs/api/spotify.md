@@ -10,7 +10,13 @@ const { DeezerGenerator } = require("embedgenerator"); //support also ES6 syntax
 Main Class for Spotify Generator
 
 ## embed
-  
+supported types
+
+|         type        | supported  |
+|:-------------------:|:----------:|
+|        track        |     ✅     |
+|       playlist      |     ✅     |
+|       podcast       |     ✅     |
 ```js
 const { SpotifyGenerator } = require("embedgenerator"); //support also ES6 syntax
 
