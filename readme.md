@@ -4,18 +4,22 @@
 [![ALL CONTRIBUTOR](https://badgen.net/github/contributors/jokay03J/embedgenerator)](https://npmjs.com/package/embedgenerator)
 [![Test code](https://github.com/Jokay03J/embedGenerator/actions/workflows/main.yml/badge.svg)](https://github.com/Jokay03J/embedGenerator/actions/workflows/main.yml)\
 [![NPM](https://nodei.co/npm/embedgenerator.png)](https://nodei.co/npm/embedgenerator/)
-### embedGenerator
+# embedGenerator
 this package create embed url with link
 
-### Supported site
+# documentation
+
+embedgenerator is documented  in [here](https://jokay03j.github.io/embedGenerator/)
+
+# Supported site
 |   site  |         type        | supported |
 |:-------:|:-------------------:|:---------:|
 | spotify |   tracklist,track   |     ✅     |
 |  deezer |   tracklist,track   |     ✅     |
 | youtube | playlist,video,live |     ✅     |
 
-# sample exemple:
-# youtube
+# exemples:
+## youtube
 ```js
 const { YoutubeGenerator } = require("embedgenerator")
 
@@ -25,7 +29,7 @@ YoutubeGenerator.embed("https://www.youtube.com/watch?v=dQw4w9WgXcQ").then((url)
 })
 ```
 
-# spotify
+## spotify
 ```js
 const { SpotifyGenerator } = require("embedgenerator")
 
@@ -35,7 +39,7 @@ SpotifyGenerator.embed("https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si
 })
 ```
 
-# deezer
+## deezer
 ```js
 const { DeezerGenerator } = require("embedgenerator")
 
@@ -45,12 +49,12 @@ DeezerGenerator.embed("https://deezer.page.link/KsnNy8jDSAzvD4GA7").then((url) =
 })
 ```
 
-### How to contribute
+# How to contribute
 You can contribute with fork this project and add pull request
 
-### Run test
+# Run test
 ```
 npm run test
 ```
-### Licence
+# Licence
 This project is under licence ISC
