@@ -9,7 +9,7 @@ class GeneratorError extends Error {
 //Youtube Errors
 class YoutubeGeneratorError extends GeneratorError {
   constructor() {
-    super(props);
+    super();
     this.message = "Youtube Error"
     this.name = "YoutubeGenerator"
   }
@@ -23,6 +23,17 @@ class YoutubeInvalidURI extends YoutubeGeneratorError {
   constructor() {
     super();
     this.message = "Invalid URI"
+    this.name = "YoutubeGenerator Error"
+  }
+}
+//Not Found Error
+/**
+ * @returns {NotFound} NotFound Error
+ */
+class YoutubeNotFound extends YoutubeGeneratorError {
+  constructor() {
+    super();
+    this.message = "Not Found"
     this.name = "YoutubeGenerator Error"
   }
 }
@@ -104,6 +115,7 @@ module.exports = {
   //youtube Generator Error
   YoutubeGeneratorError,
   YoutubeInvalidURI,
+  YoutubeNotFound,
   //all parents Generator Error default
   GeneratorError,
   //Spotify Generator Error
