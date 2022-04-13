@@ -18,4 +18,5 @@ DeezerGenerator.embed("https://deezer.page.link/KsnNy8jDSAzvD4GA7").then((url) =
   console.log(url); //output: https://widget.deezer.com/widget/auto/track/66677621?autoplay=false&radius=true&tracklist=true
 });
 ```
+parameter: ```url deezer```<br />
 return: ```Promise<DeezerWidgetUrl>```

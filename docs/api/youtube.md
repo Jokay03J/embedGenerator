@@ -18,4 +18,5 @@ YoutubeGenerator.embed("https://www.youtube.com/watch?v=dQw4w9WgXcQ").then((url)
   console.log(url); //output: https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1
 });
 ```
+parameter: ```url youtube```<br />
 return: ```Promise<YoutubeWidgetUrl>```

@@ -18,4 +18,5 @@ SpotifyGenerator.embed("https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si
   console.log(url); //output: https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?utm_source=oembed
 });
 ```
+parameter: ```url spotify```<br />
 return: ```Promise<SpotifyWidgetUrl>```
