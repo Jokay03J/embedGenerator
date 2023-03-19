@@ -2,25 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jokay03j.github.io/embedGenerator/blog</id>
     <title>embedgenerator Blog</title>
-    <updated>2022-04-13T17:32:52.000Z</updated>
+    <updated>2023-03-19T01:09:05.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jokay03j.github.io/embedGenerator/blog"/>
     <subtitle>embedgenerator Blog</subtitle>
     <icon>https://jokay03j.github.io/embedGenerator/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Première version]]></title>
-        <id>première version</id>
-        <link href="https://jokay03j.github.io/embedGenerator/blog/première version"/>
-        <updated>2022-04-13T17:32:52.000Z</updated>
+        <title type="html"><![CDATA[v1.0.0]]></title>
+        <id>https://jokay03j.github.io/embedGenerator/blog/first-version</id>
+        <link href="https://jokay03j.github.io/embedGenerator/blog/first-version"/>
+        <updated>2023-03-19T01:09:05.000Z</updated>
         <summary type="html"><![CDATA[🇫🇷 [fr]]]></summary>
         <content type="html"><![CDATA[<p>🇫🇷 <!-- -->[fr]</p><p>voici la première version de la documentation de <a href="https://npmjs/package/embedgenerator" target="_blank" rel="noopener noreferrer">embed generator</a> !
-cette version contient:</p><ul><li>des exemples</li><li>les sites qui sont supporter</li><li>bien commencer</li></ul><p>🇺🇸 <!-- -->[en]</p><p>first version of the documentation of <a href="https://npmjs/package/embedgenerator" target="_blank" rel="noopener noreferrer">embed generator</a> is out!
+cette version contient:</p><ul><li>des exemples</li><li>sites supporté</li><li>bien commencé</li></ul><p>🇺🇸 <!-- -->[en]</p><p>first version of the documentation of <a href="https://npmjs/package/embedgenerator" target="_blank" rel="noopener noreferrer">embed generator</a> is out!
 this version contains:</p><ul><li>examples</li><li>supported sites</li><li>get started</li></ul>]]></content>
         <author>
             <name>Jokay03J</name>
-            <uri>https://jokay03j.tk</uri>
+            <uri>https://github.com/jokay03J</uri>
         </author>
         <category label="news" term="news"/>
-        <category label="v1" term="v1"/>
+        <category label="release" term="release"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v1.0.1]]></title>
+        <id>https://jokay03j.github.io/embedGenerator/blog/v1.0.1</id>
+        <link href="https://jokay03j.github.io/embedGenerator/blog/v1.0.1"/>
+        <updated>2023-03-19T01:09:05.000Z</updated>
+        <summary type="html"><![CDATA[notable changes]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="notable-changes">notable changes<a href="#notable-changes" class="hash-link" aria-label="Direct link to notable changes" title="Direct link to notable changes">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="lib">lib<a href="#lib" class="hash-link" aria-label="Direct link to lib" title="Direct link to lib">​</a></h3><ul><li>fully converted embedgenerator to typescript</li><li>refactor GeneratorError stucture</li><li>refactor generator</li><li>update unit test with promise(avoid timeout)</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="docs">docs<a href="#docs" class="hash-link" aria-label="Direct link to docs" title="Direct link to docs">​</a></h3><ul><li>cover SoundCloud generator</li><li>clarify api references for all generator</li></ul><p>you can already update your project.</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token function" style="color:#d73a49">npm</span><span class="token plain"> i embedgenerator@latest</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>for full changelog <a href="https://github.com/jokay03j/embedgenerator/releases/latest" target="_blank" rel="noopener noreferrer">here</a></p>]]></content>
+        <author>
+            <name>Jokay03J</name>
+            <uri>https://github.com/jokay03J</uri>
+        </author>
+        <category label="news" term="news"/>
+        <category label="release" term="release"/>
     </entry>
 </feed>

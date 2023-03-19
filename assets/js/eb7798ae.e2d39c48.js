@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkembedgenerator_docs=self.webpackChunkembedgenerator_docs||[]).push([[77],{7060:e=>{e.exports=JSON.parse('{"label":"news","permalink":"/embedGenerator/blog/tags/news","allTagsPath":"/embedGenerator/blog/tags","count":2}')}}]);
