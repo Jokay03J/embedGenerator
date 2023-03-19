@@ -1,28 +1,54 @@
 ---
 sidebar_position: 2
+title: Spotify Generator
 ---
-# Spotify Generator
 
-## SpotifyGenerator
+## Import
+
 ```js
-const { DeezerGenerator } = require("embedgenerator"); //support also ES6 syntax
+import { SpotifyGenerator } from "embedgenerator"; //support also CommonJS syntax
 ```
-Main Class for Spotify Generator
 
-## embed
-supported types
+## Embed
 
-|         type        | supported  |
-|:-------------------:|:----------:|
-|        track        |     ✅     |
-|       playlist      |     ✅     |
-|       podcast       |     ✅     |
+Get embed url from spotify valid url.
+
+### Supported spotify url type
+
+|   type   | supported |
+| :------: | :-------: |
+|  track   |    ✅     |
+| playlist |    ✅     |
+| podcast  |    ✅     |
+|  artist  |    ✅     |
+
+### Parameters
+
+`embed` accepts single parameters, with the following options:
+
 ```js
-const { SpotifyGenerator } = require("embedgenerator"); //support also ES6 syntax
+interface SpotifyGeneratorEmbed {
+  /**
+   * spotify valid url
+   */
+  url: string;
+}
 
-SpotifyGenerator.embed("https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si=8485dc026c1e4205").then((url) => {
+SpotifyGenerator.embed(SpotifyGeneratorEmbed): Promise<string>
+```
+
+#### url
+
+spotify valid url.
+
+### Exemple
+
+```js
+import { SpotifyGenerator } from "embedgenerator"; //support also CommonJS syntax
+
+SpotifyGenerator.embed(
+  "https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si=8485dc026c1e4205"
+).then((url) => {
   console.log(url); //output: https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?utm_source=oembed
 });
 ```
-parameter: ```url spotify```<br />
-return: ```Promise<SpotifyWidgetUrl>```

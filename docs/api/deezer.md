@@ -1,29 +1,60 @@
 ---
 sidebar_position: 1
+title: Deezer Generator
 ---
-# Deezer Generator
 
-## DeezerGenerator
+## Import
+
 ```js
-const { DeezerGenerator } = require("embedgenerator"); //support also ES6 syntax
+import { DeezerGenerator } from "embedgenerator"; //support also CommonJS syntax
 ```
-Main Class for Deezer Generator
 
-## embed
+## Embed
 
-supported types
+:::caution
 
-|         type        | supported  |
-|:-------------------:|:----------:|
-|        track        |     ✅     |
-|       playlist      |     ✅     |
-|       podcast       |     ✅     |
+Deezer Generator don't work in browser because deezer use [CORS](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS).
+
+:::
+
+get embed url from deezer valid url.
+
+### Supported url type
+
+|   type   | supported |
+| :------: | :-------: |
+|  track   |    ✅     |
+| playlist |    ✅     |
+| podcast  |    ✅     |
+|  artist  |    ✅     |
+
+### Parameters
+
+`embed` accepts single parameters, with the following options:
+
 ```js
-const { DeezerGenerator } = require("embedgenerator"); //support also ES6 syntax
+interface DeezerGeneratorEmbed {
+  /**
+   * deezer valid url
+   */
+  url: string;
+}
 
-DeezerGenerator.embed("https://deezer.page.link/KsnNy8jDSAzvD4GA7").then((url) => {
-  console.log(url); //output: https://widget.deezer.com/widget/auto/track/66677621?autoplay=false&radius=true&tracklist=true
-});
+DeezerGenerator.embed(DeezerGeneratorEmbed): Promise<string>
 ```
-parameter: ```url deezer```<br />
-return: ```Promise<DeezerWidgetUrl>```
+
+#### url
+
+deezer valid url.
+
+### Exemple
+
+```js
+import { DeezerGenerator } from "embedgenerator"; //support also CommonJS syntax
+
+DeezerGenerator.embed("https://deezer.page.link/KsnNy8jDSAzvD4GA7").then(
+  (url) => {
+    console.log(url); //output: https://widget.deezer.com/widget/auto/track/66677621?autoplay=false&radius=true&tracklist=true
+  }
+);
+```
