@@ -1,40 +1,56 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'embedgenerator',
-  tagline: 'generate youtube,soundcloud,spotify and deezer widget url',
-  url: 'https://jokay03j.github.io',
-  baseUrl: '/embedGenerator/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'jokay03J', // Usually your GitHub org/user name.
-  projectName: 'https://jokay03j.github.io', // Usually your repo name.
-  trailingSlash: false,
+  title: "embedgenerator",
+  tagline: "get embed url from supported site url !",
+  favicon: "img/favicon.ico",
+
+  // Set the production url of your site here
+  url: "https://jokay03j.github.io",
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: "/embedGenerator/",
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: "jokay03J", // Usually your GitHub org/user name.
+  projectName: "embedGenerator", // Usually your repo name.
+
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/Jokay03J/embedGenerator/tree/docs',
+          // Remove this to remove the "edit this page" links.
+          editUrl: "https://github.com/Jokay03J/embedGenerator/tree/docs",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/Jokay03J/embedGenerator/tree/docs',
+          // Remove this to remove the "edit this page" links.
+          editUrl: "https://github.com/Jokay03J/embedGenerator/tree/docs",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -43,71 +59,65 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'embedgenerator',
+        title: "embedGenerator",
         logo: {
-          alt: 'logo enbed generator',
-          src: 'img/logo.png',
+          alt: "embedgenerator logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Docs",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: 'https://github.com/jokay03J/embedgenerator',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/jokay03J/embedGenerator",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Tutorial",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/jokay03J',
+                label: "Twitter",
+                href: "https://twitter.com/jokay03J",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/jokay03J/embedgenerator',
+                label: "GitHub",
+                href: "https://github.com/jokay03J/embedGenerator",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} embedgenerator, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} jokay03J. Built with ❤️.`,
       },
       prism: {
         theme: lightCodeTheme,
