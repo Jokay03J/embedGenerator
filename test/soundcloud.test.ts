@@ -1,4 +1,4 @@
-import { SoundCloudGenerator } from "../generator/souncloud";
+import { SoundCloudGenerator } from "../src/generators/souncloud";
 import { expect, test } from "@jest/globals";
 
 test("https%3A//api.soundcloud.com/tracks/166877736 to be https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/166877736&color=ff5500&auto_play=false&hide_related=true&show_artwork=true&show_comments=true&show_user=true&show_reposts=true%22", async () => {

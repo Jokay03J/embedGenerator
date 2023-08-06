@@ -1,4 +1,4 @@
-import { SpotifyGenerator } from "../generator/spotify";
+import { SpotifyGenerator } from "../src/generators/spotify";
 import { expect, test } from "@jest/globals";
 
 test("http://open.spotify.com/track/298gs9ATwr2rD9tGYJKlQR", async () => {
