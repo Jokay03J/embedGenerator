@@ -17,6 +17,7 @@
     "strict": true,
     "skipLibCheck": true
   },
+  "include": ["src/**/*"],
   // exclude dist files
   "exclude": ["./dist", "node_modules", "./dist/types"]
 }
