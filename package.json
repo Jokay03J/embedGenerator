@@ -1,6 +1,6 @@
 {
   "name": "embedgenerator",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "create url embed for spotify,deezer,youtube,etc...!",
   "type": "module",
   "exports": {
