@@ -1,5 +1,11 @@
 # embedgenerator
 
+## 2.0.1
+
+### Patch Changes
+
+- f8dbc30: - add ESM & CJS support
+
 ## 2.0.0
 
 ### Major Changes
