@@ -1,5 +1,11 @@
 # embedgenerator
 
+## 2.0.2
+
+### Patch Changes
+
+- d851494: - Fix build files are doesn't on npm
+
 ## 2.0.1
 
 ### Patch Changes
