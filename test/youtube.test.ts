@@ -1,4 +1,4 @@
-import { YoutubeGenerator } from "../generator/youtube";
+import { YoutubeGenerator } from "../src/generators/youtube";
 import { expect, test } from "@jest/globals";
 
 test("https://www.youtube.com/watch?v=SeMNJlfBJdE to https://www.youtube.com/embed/SeMNJlfBJdE?feature=oembed", async () => {
