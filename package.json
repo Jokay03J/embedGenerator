@@ -23,7 +23,8 @@
     "build": "tsup --minify",
     "prettier:format": "prettier --write ./",
     "prettier:check": "prettier --check ./",
-    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
