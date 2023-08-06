@@ -3,6 +3,18 @@ sidebar_position: 2
 title: Getting Started
 ---
 
+:::info
+
+Since 2.0.2 embedGenerator is compatible ESM and CJS.
+
+:::
+
+:::warning
+
+You must have Node.js >=16 to use embedGenerator.
+
+:::
+
 welcome in embed generator docs !<br/>
 embed generator is simple embed url generator
 
