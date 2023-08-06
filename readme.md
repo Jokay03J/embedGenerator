@@ -64,7 +64,13 @@ DeezerGenerator.embed("https://deezer.page.link/KsnNy8jDSAzvD4GA7").then(
 
 # How to contribute
 
-You can contribute with fork this project and add pull request
+You can contribute with fork this project.
+
+## Make changelog
+
+After you have finished your work, you must make a changelog using `npx changeset`.  
+After you have make your changelog create a pull request **with your commited changelog inside .changeset**.  
+That it !
 
 # Run test
 
